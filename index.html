@@ -232,6 +232,33 @@ nav{
   padding:5px 10px;border-radius:6px;
 }
 
+/* ---------- AI DEVELOPMENT ---------- */
+#ai{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:960px){.app-grid{grid-template-columns:1fr;}}
+.app-card{
+  display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line);border-radius:14px;padding:28px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.app-card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 20px 40px -20px rgba(56,225,242,.3);}
+.app-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.app-num{font-family:var(--font-mono);font-size:11px;color:var(--cyan);letter-spacing:.12em;}
+.app-card h3{font-size:20px;color:var(--white);margin-bottom:4px;}
+.app-tagline{font-family:var(--font-mono);font-size:12px;color:var(--cyan);margin-bottom:16px;line-height:1.5;}
+.app-feats{list-style:none;color:var(--slate);font-size:13.5px;flex:1;}
+.app-feats li{position:relative;padding-left:17px;margin-bottom:8px;line-height:1.55;}
+.app-feats li::before{content:'▸';position:absolute;left:0;color:var(--cyan);}
+.app-live{
+  display:inline-flex;align-items:center;gap:8px;margin-top:18px;align-self:flex-start;
+  font-family:var(--font-mono);font-size:12.5px;color:var(--cyan);
+  border:1px solid rgba(56,225,242,.35);padding:8px 14px;border-radius:8px;
+  transition:background .2s,border-color .2s;
+}
+.app-live:hover{background:rgba(56,225,242,.08);border-color:var(--cyan);}
+.app-live .dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:pulse 2s infinite;}
+
 /* ---------- HIGHLIGHTS ---------- */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
 @media(max-width:820px){.proj-grid{grid-template-columns:1fr;}}
@@ -295,6 +322,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#ai">AI Development</a>
       <a href="#projects">Highlights</a>
       <a href="#education">Education</a>
     </div>
@@ -314,7 +342,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
         I'm <strong>Vinodh Kumar Poomari</strong>, a Program Management &amp; PMO Leader based in Bengaluru with
         <strong>16+ years</strong> across Banking and Telecom — currently leading strategic banking
         transformation programs for <strong>HSBC WPB Asset Management</strong> at Capco, enabling predictable
-        business outcomes through structured execution.
+        business outcomes through structured execution. Beyond programs, I design and build
+        <strong>AI-powered products</strong> — <strong>PM Control Tower</strong>, <strong>Jigglypuff</strong> and
+        <strong>The Fix</strong> — live prototypes that put AI to work on real delivery problems.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View Highlights →</a>
@@ -371,7 +401,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
         <div class="about-text">
           <p>I started my career in 2009 as a <strong>Team Lead at NTT DATA</strong>, managing tariff operations and digital front-end initiatives for <strong>T-Mobile and Orange</strong> — and building automated reporting solutions that turned manual monitoring into informed decision-making.</p>
           <p>That operational grounding grew into <strong>global delivery leadership</strong> at Capgemini — running PMO operations across <strong>India, UK, Netherlands and UAE</strong>, delivering the multi-million-euro <strong>Grolsch SAP implementation</strong> with zero-error audits — followed by an automation-first chapter at Gradmener, implementing <strong>Robotic Process Automation</strong> that redesigned manual workflows into structured, scalable processes.</p>
-          <p>Today I work at the intersection of <strong>program management, portfolio governance and financial oversight</strong> — currently as a Senior Program Management Consultant at Capco, leading strategic banking transformation for HSBC WPB Asset Management with charters, roadmaps, governance models, Power BI portfolio intelligence and AI-enabled automation that keeps execution predictable.</p>
+          <p>Today I work at the intersection of <strong>program management, portfolio governance and financial oversight</strong> — currently as a Senior Program Management Consultant at Capco, leading strategic banking transformation for HSBC WPB Asset Management with charters, roadmaps, governance models, Power BI portfolio intelligence and AI-enabled automation that keeps execution predictable. Outside enterprise delivery, I build AI products hands-on — <strong>PM Control Tower</strong>, <strong>Jigglypuff</strong> and <strong>The Fix</strong> — designed end-to-end with AI-assisted development and shipped as live, working prototypes.</p>
         </div>
       </div>
       <div class="stat-grid reveal">
@@ -551,10 +581,69 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
   </div>
 </section>
 
+<!-- AI DEVELOPMENT & USAGE -->
+<section id="ai">
+  <div class="wrap">
+    <div class="eyebrow">04 // AI Development &amp; Usage</div>
+    <h2 class="section-title reveal">AI products designed, built &amp; shipped</h2>
+    <p class="section-sub reveal">Not just using AI — building with it. Three working product prototypes designed end-to-end through AI-assisted development and deployed live.</p>
+    <div class="app-grid">
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 01</span><span class="proj-plat">PPM Platform</span></div>
+        <h3>PM Control Tower</h3>
+        <div class="app-tagline">Enterprise Project, Program &amp; Portfolio Management — "The Command Center"</div>
+        <ul class="app-feats">
+          <li>Executive Control Tower with RAG + GREY honesty, exception-first feed and traceable insights — leadership never needs to ask for status.</li>
+          <li>Portfolio → Program → Project → WBS hierarchy with CPM schedule engine (critical path, float), milestones and versioned baselines.</li>
+          <li>EVM engine (CPI / SPI / EAC / ETC / VAC), budget lines, RAID, change requests and a governance rules engine with auto-alerts.</li>
+          <li>One-click Leadership Pack, 17 sub-reports, What-Changed analysis and AI-drafted steering packs (human-gated).</li>
+          <li>Agile sprints, Kanban / Calendar / Workload boards, Monte Carlo P80 forecasting and tamper-evident evidence bundles.</li>
+          <li>Investment governance — business cases with ROI / NPV / IRR / payback and CFO approval workflow.</li>
+          <li>115 data models · 167 API routes · 15 computation engines with a realtime gateway.</li>
+        </ul>
+        <a class="app-live" href="https://pmct.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — pmct.vercel.app</a>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 02</span><span class="proj-plat">Voice AI</span></div>
+        <h3>Jigglypuff</h3>
+        <div class="app-tagline">Unified voice AI assistant — converse, research, meet, act</div>
+        <ul class="app-feats">
+          <li>Natural voice conversation with barge-in interruption and empathic, tone-adaptive responses in 80+ languages.</li>
+          <li>Deep research mode — multi-source synthesis delivered as citation cards from live open data.</li>
+          <li>Meeting intelligence — live timestamped transcription compiled into duration, topic and word summaries.</li>
+          <li>HITL-gated tools — high-risk actions pause for explicit voice or click approval before executing.</li>
+          <li>Dashboard modules — automated daily worklog, requests ticketing, lead capture, scheduling, email drafting and a Voice Lab studio.</li>
+          <li>Continuous-learning vocabulary, universal dictation and a one-line embeddable widget — 100% local-first privacy.</li>
+          <li>Optional routing to any OpenAI-compatible engine with keyless open-data fallback.</li>
+        </ul>
+        <a class="app-live" href="https://jigglypuff-ai.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — jigglypuff-ai.vercel.app</a>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 03</span><span class="proj-plat">Agentic AI</span></div>
+        <h3>The Fix</h3>
+        <div class="app-tagline">Enterprise solution discovery &amp; dual-track architecture engine</div>
+        <ul class="app-feats">
+          <li>Ingests vague requirements and outputs global market analysis plus dual-track architectures — Agile/Lean vs Enterprise Scale — each with costed KPIs and a Probability-of-Success score.</li>
+          <li>Multi-agent LangGraph pipeline (5 agents) with live agent streaming and a What-If re-scoring studio.</li>
+          <li>Rendered Mermaid.js architecture diagrams and exact PoC blueprints ready for execution.</li>
+          <li>Six modules — Command Deck, Solution Discovery, Blueprint Vault, Requirements Intake, Test Orchestration, PMO Analytics.</li>
+          <li>One-click corporate exports — PPT, DOC, CSV, PDF — with a server-side Team Vault, auto-versioning and audit trail.</li>
+          <li>Ships as web SPA, Windows desktop (Tauri 2.0) and mobile (Capacitor / PWA) from one codebase.</li>
+        </ul>
+        <a class="app-live" href="https://the-fix-optinus.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — the-fix-optinus.vercel.app</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS / HIGHLIGHTS -->
 <section id="projects">
   <div class="wrap">
-    <div class="eyebrow">04 // Highlights</div>
+    <div class="eyebrow">05 // Highlights</div>
     <h2 class="section-title reveal">Signature programs &amp; wins</h2>
     <p class="section-sub reveal">Enterprise-scale programs across banking, ERP, automation and telecom — each delivered with governance, discipline and measurable outcomes.</p>
     <div class="proj-grid">
@@ -601,7 +690,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
 <!-- EDUCATION -->
 <section id="education">
   <div class="wrap">
-    <div class="eyebrow">05 // Education</div>
+    <div class="eyebrow">06 // Education</div>
     <h2 class="section-title reveal">Education &amp; certifications</h2>
     <div class="edu-grid">
       <div class="edu-card reveal">
@@ -632,7 +721,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;width
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="eyebrow" style="justify-content:center;">06 // Contact</div>
+    <div class="eyebrow" style="justify-content:center;">07 // Contact</div>
     <h2 class="contact-title reveal">Let's deliver something<br>exceptional together.</h2>
     <p class="section-sub reveal">Open to senior leadership roles in Program Management, Delivery Management, PMO, Portfolio Management, or Enterprise Transformation.</p>
     <div class="contact-actions reveal">
