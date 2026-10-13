@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinodh Kumar Poomari — AI Leader &amp; PMO Reporting Specialist</title>
+<meta name="description" content="Vinodh Kumar Poomari — AI-enabled delivery leader and PMO Reporting Specialist with 16+ years in enterprise transformation, portfolio intelligence, governance and AI product development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-950:#05070f;
+  --navy-900:#0a0f1e;
+  --navy-800:#111a30;
+  --navy-700:#1a2646;
+  --navy-600:#243358;
+  --line:#22304f;
+  --blue:#4c8dff;
+  --cyan:#38e1f2;
+  --white:#f5f8ff;
+  --slate:#8a93ac;
+  --slate-dim:#5d6885;
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--navy-950);
+  color:var(--white);
+  font-family:var(--font-body);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+::selection{background:var(--blue);color:var(--navy-950);}
+
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+section{position:relative;padding:120px 0;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--cyan);
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:'';
+  width:7px;height:7px;border-radius:50%;
+  background:var(--cyan);
+  box-shadow:0 0 0 3px rgba(56,225,242,.18);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 3px rgba(56,225,242,.18);}
+  50%{box-shadow:0 0 0 6px rgba(56,225,242,.05);}
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;}
+.section-title{font-size:clamp(28px,3.4vw,40px);margin-bottom:12px;color:var(--white);}
+.section-sub{color:var(--slate);max-width:560px;font-size:16px;margin-bottom:56px;}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ---------- NAV ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(5,7,15,.72);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+nav{
+  max-width:1120px;margin:0 auto;padding:18px 32px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{
+  font-family:var(--font-mono);font-weight:600;font-size:15px;
+  display:flex;align-items:center;gap:8px;color:var(--white);
+}
+.logo .dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;box-shadow:0 0 10px var(--cyan);}
+.navlinks{display:flex;gap:34px;font-size:14px;color:var(--slate);}
+.navlinks a{transition:color .2s;position:relative;}
+.navlinks a:hover{color:var(--white);}
+.nav-cta{
+  font-family:var(--font-mono);font-size:13px;
+  border:1px solid var(--line);padding:9px 18px;border-radius:6px;
+  color:var(--white);transition:border-color .2s,background .2s;
+}
+.nav-cta:hover{border-color:var(--blue);background:rgba(76,141,255,.08);}
+
+@media(max-width:820px){
+  .navlinks{display:none;}
+}
+
+/* ---------- HERO ---------- */
+#hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding-top:140px;padding-bottom:80px;
+  background:
+    radial-gradient(ellipse 900px 500px at 15% 0%, rgba(76,141,255,.16), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 30%, rgba(56,225,242,.10), transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+
+.terminal{
+  font-family:var(--font-mono);font-size:13.5px;color:var(--slate);
+  margin-bottom:26px;
+}
+.terminal .prompt{color:var(--cyan);}
+.terminal .cmd{color:var(--white);border-right:2px solid var(--cyan);padding-right:3px;}
+
+.hero-title{
+  font-size:clamp(38px,5.6vw,64px);
+  line-height:1.04;
+  margin-bottom:20px;
+  color:var(--white);
+}
+.hero-title .accent{
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-desc{
+  color:var(--slate);font-size:17px;max-width:520px;margin-bottom:34px;
+}
+.hero-desc strong{color:var(--white);font-weight:600;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:52px;}
+.btn{
+  font-family:var(--font-body);font-weight:600;font-size:14.5px;
+  padding:14px 26px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.btn-primary{background:var(--blue);color:var(--navy-950);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(76,141,255,.35);}
+.btn-ghost{border:1px solid var(--line);color:var(--white);}
+.btn-ghost:hover{border-color:var(--cyan);background:rgba(56,225,242,.06);}
+
+/* status dashboard card */
+.status-card{
+  background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:26px 26px 22px;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+}
+.status-head{
+  display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--font-mono);font-size:12px;color:var(--slate);
+  margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line);
+}
+.status-live{display:flex;align-items:center;gap:7px;color:var(--cyan);}
+.status-live .dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:pulse 2s infinite;}
+.status-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--navy-700);}
+.status-row:last-of-type{border-bottom:none;}
+.status-label{font-size:13.5px;color:var(--slate);}
+.status-value{font-family:var(--font-mono);font-weight:600;font-size:15px;color:var(--white);}
+.bar-track{height:6px;background:var(--navy-700);border-radius:3px;overflow:hidden;margin-top:8px;}
+.bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0;transition:width 1.4s cubic-bezier(.16,1,.3,1);}
+.status-foot{
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+  font-family:var(--font-mono);font-size:11.5px;color:var(--slate-dim);
+  display:flex;justify-content:space-between;
+}
+
+/* ---------- ABOUT ---------- */
+#about{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:40px;}}
+.about-text p{color:var(--slate);font-size:16px;margin-bottom:18px;}
+.about-text strong{color:var(--white);}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.stat-box{
+  background:var(--navy-800);border:1px solid var(--line);border-radius:12px;padding:22px;
+  transition:border-color .25s,transform .25s;
+}
+.stat-box:hover{border-color:var(--blue);transform:translateY(-3px);}
+.stat-num{font-family:var(--font-display);font-size:32px;color:var(--cyan);margin-bottom:6px;}
+.stat-label{font-size:13px;color:var(--slate);}
+
+/* ---------- EXPERIENCE ---------- */
+.timeline{position:relative;padding-left:34px;}
+.timeline::before{
+  content:'';position:absolute;left:6px;top:6px;bottom:6px;width:1px;
+  background:linear-gradient(180deg,var(--blue),var(--cyan) 60%,transparent);
+}
+.tl-item{position:relative;margin-bottom:52px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{
+  position:absolute;left:-34px;top:6px;width:13px;height:13px;border-radius:50%;
+  background:var(--navy-950);border:2px solid var(--cyan);box-shadow:0 0 0 4px var(--navy-950),0 0 14px rgba(56,225,242,.5);
+}
+.tl-item.past .tl-dot{border-color:var(--blue);box-shadow:0 0 0 4px var(--navy-950),0 0 14px rgba(76,141,255,.4);}
+.tl-meta{
+  font-family:var(--font-mono);font-size:12px;color:var(--slate-dim);
+  display:flex;gap:14px;flex-wrap:wrap;margin-bottom:8px;
+}
+.tl-badge{color:var(--cyan);border:1px solid rgba(56,225,242,.3);padding:2px 9px;border-radius:20px;}
+.tl-item.past .tl-badge{color:var(--blue);border-color:rgba(76,141,255,.3);}
+.tl-role{font-family:var(--font-display);font-size:21px;color:var(--white);margin-bottom:3px;}
+.tl-org{color:var(--slate);font-size:14.5px;margin-bottom:14px;}
+.tl-list{list-style:none;color:var(--slate);font-size:15px;}
+.tl-list li{position:relative;padding-left:20px;margin-bottom:9px;}
+.tl-list li::before{content:'▸';position:absolute;left:0;color:var(--cyan);}
+.tl-item.past .tl-list li::before{color:var(--blue);}
+.tl-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.tag{
+  font-family:var(--font-mono);font-size:11.5px;color:var(--slate);
+  background:var(--navy-800);border:1px solid var(--line);padding:5px 11px;border-radius:6px;
+}
+
+/* ---------- SKILLS ---------- */
+#skills{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:900px){.skill-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.skill-grid{grid-template-columns:1fr;}}
+.skill-card{
+  background:var(--navy-800);border:1px solid var(--line);border-radius:12px;padding:24px;
+  transition:transform .25s,border-color .25s;
+}
+.skill-card:hover{transform:translateY(-4px);border-color:var(--blue);}
+.skill-card h3{font-size:15.5px;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:9px;}
+.skill-card h3::before{content:'';width:6px;height:6px;background:var(--cyan);border-radius:1px;transform:rotate(45deg);}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.skill-tags span{
+  font-size:12.5px;color:var(--slate);background:var(--navy-700);
+  padding:5px 10px;border-radius:6px;
+}
+
+/* ---------- AI DEVELOPMENT ---------- */
+#ai{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+@media(max-width:960px){.app-grid{grid-template-columns:1fr;}}
+.app-card{
+  display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line);border-radius:14px;padding:28px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.app-card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 20px 40px -20px rgba(56,225,242,.3);}
+.app-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.app-num{font-family:var(--font-mono);font-size:11px;color:var(--cyan);letter-spacing:.12em;}
+.app-card h3{font-size:20px;color:var(--white);margin-bottom:4px;}
+.app-tagline{font-family:var(--font-mono);font-size:12px;color:var(--cyan);margin-bottom:16px;line-height:1.5;}
+.app-feats{list-style:none;color:var(--slate);font-size:13.5px;flex:1;}
+.app-feats li{position:relative;padding-left:17px;margin-bottom:8px;line-height:1.55;}
+.app-feats li::before{content:'▸';position:absolute;left:0;color:var(--cyan);}
+.app-live{
+  display:inline-flex;align-items:center;gap:8px;margin-top:18px;align-self:flex-start;
+  font-family:var(--font-mono);font-size:12.5px;color:var(--cyan);
+  border:1px solid rgba(56,225,242,.35);padding:8px 14px;border-radius:8px;
+  transition:background .2s,border-color .2s;
+}
+.app-live:hover{background:rgba(56,225,242,.08);border-color:var(--cyan);}
+.app-live .dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:pulse 2s infinite;}
+
+/* ---------- HIGHLIGHTS ---------- */
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+@media(max-width:820px){.proj-grid{grid-template-columns:1fr;}}
+.proj-card{
+  background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line);border-radius:14px;padding:28px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.proj-card:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 20px 40px -20px rgba(76,141,255,.3);}
+.proj-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;}
+.proj-cat{font-family:var(--font-mono);font-size:11px;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;}
+.proj-plat{font-family:var(--font-mono);font-size:11px;color:var(--slate-dim);border:1px solid var(--line);padding:3px 8px;border-radius:5px;}
+.proj-card h3{font-size:19px;color:var(--white);margin-bottom:10px;}
+.proj-card p{color:var(--slate);font-size:14.5px;margin-bottom:16px;}
+.proj-stack{display:flex;flex-wrap:wrap;gap:7px;}
+.proj-stack span{font-family:var(--font-mono);font-size:11px;color:var(--slate);background:var(--navy-700);padding:4px 9px;border-radius:5px;}
+
+/* ---------- EDUCATION ---------- */
+#education{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:820px){.edu-grid{grid-template-columns:1fr;}}
+.edu-card{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--navy-800);}
+.edu-card .yr{font-family:var(--font-mono);font-size:11.5px;color:var(--cyan);margin-bottom:10px;}
+.edu-card h3{font-size:16.5px;color:var(--white);margin-bottom:6px;}
+.edu-card p{color:var(--slate);font-size:14px;}
+
+.chip-row{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;}
+.chip{
+  font-family:var(--font-mono);font-size:12.5px;color:var(--slate);
+  border:1px solid var(--line);padding:8px 16px;border-radius:20px;
+  display:flex;align-items:center;gap:8px;
+}
+.chip b{color:var(--white);}
+
+/* ---------- CONTACT ---------- */
+#contact{text-align:center;padding-top:100px;padding-bottom:110px;}
+#contact .section-sub{margin-left:auto;margin-right:auto;}
+.contact-title{font-size:clamp(30px,4.4vw,50px);margin-bottom:18px;}
+.contact-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px;}
+.contact-links{display:flex;gap:28px;justify-content:center;margin-top:46px;flex-wrap:wrap;font-family:var(--font-mono);font-size:13.5px;color:var(--slate);}
+.contact-links a:hover{color:var(--cyan);}
+
+footer{
+  border-top:1px solid var(--line);padding:28px 0;
+  font-family:var(--font-mono);font-size:12px;color:var(--slate-dim);
+}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:10px;}
+
+@media(max-width:600px){
+  section{padding:80px 0;}
+  .wrap{padding:0 20px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="dot"></span>VINODH.PMO</div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#ai">AI Development</a>
+      <a href="#projects">Highlights</a>
+      <a href="#education">Education</a>
+    </div>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="terminal">
+        <span class="prompt">vinodh@pmo:~$</span> <span class="cmd" id="typed"></span>
+      </div>
+      <h1 class="hero-title">Delivering enterprise<br>transformation, from <span class="accent">strategy</span><br>to <span class="accent">execution.</span></h1>
+      <p class="hero-desc">
+        I'm <strong>Vinodh Kumar Poomari</strong>, a AI-enabled Delivery &amp; PMO Reporting Leader based in Chennai with
+        <strong>16+ years</strong> across Banking and Telecom — currently leading strategic banking
+        transformation programs for <strong>HSBC WPB Asset Management</strong> at Capco, enabling predictable
+        business outcomes through structured execution. Beyond programs, I design and build
+        <strong>AI-powered products</strong> — <strong>PM Control Tower</strong>, <strong>Jigglypuff</strong>,
+        <strong>The Fix</strong>, <strong>Bumblebee</strong> and <strong>Optinus Resource Management Tool</strong> — applying AI to real delivery and workforce challenges.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Highlights →</a>
+        <a class="btn btn-ghost" href="assets/Vinodh_Kumar_Poomari_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="status-card reveal">
+      <div class="status-head">
+        <span>SYSTEM // career_status.log</span>
+        <span class="status-live"><span class="dot"></span>ONLINE</span>
+      </div>
+      <div class="status-row">
+        <div style="width:100%">
+          <div style="display:flex;justify-content:space-between;">
+            <span class="status-label">Total Experience</span>
+            <span class="status-value">16y+</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-width="100%"></div></div>
+        </div>
+      </div>
+      <div class="status-row">
+        <div style="width:100%">
+          <div style="display:flex;justify-content:space-between;">
+            <span class="status-label">Banking &amp; Financial Services</span>
+            <span class="status-value">7y+</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-width="44%"></div></div>
+        </div>
+      </div>
+      <div class="status-row">
+        <div style="width:100%">
+          <div style="display:flex;justify-content:space-between;">
+            <span class="status-label">Telecom &amp; Enterprise Delivery</span>
+            <span class="status-value">9y+</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" data-width="56%"></div></div>
+        </div>
+      </div>
+      <div class="status-foot">
+        <span>base: Bengaluru, IN</span>
+        <span>uptime: 2009 — present</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">01 // About</div>
+    <div class="about-grid">
+      <div class="reveal">
+        <h2 class="section-title">From telecom operations to enterprise program leadership.</h2>
+        <div class="about-text">
+          <p>I started my career in 2009 as a <strong>Team Lead at NTT DATA</strong>, managing tariff operations and digital front-end initiatives for <strong>T-Mobile and Orange</strong> — and building automated reporting solutions that turned manual monitoring into informed decision-making.</p>
+          <p>That operational grounding grew into <strong>global delivery leadership</strong> at Capgemini — running PMO operations across <strong>India, UK, Netherlands and UAE</strong>, delivering the multi-million-euro <strong>Grolsch SAP implementation</strong> with zero-error audits — followed by an automation-first chapter at Gradmener, implementing <strong>Robotic Process Automation</strong> that redesigned manual workflows into structured, scalable processes.</p>
+          <p>Today I work at the intersection of <strong>program management, portfolio governance and financial oversight</strong> — currently as a Senior Program Management Consultant at Capco, leading strategic banking transformation for HSBC WPB Asset Management with charters, roadmaps, governance models, Power BI portfolio intelligence and AI-enabled automation that keeps execution predictable. Outside enterprise delivery, I build AI products hands-on — <strong>PM Control Tower</strong>, <strong>Jigglypuff</strong> and <strong>The Fix</strong> — designed end-to-end with AI-assisted development and shipped as live, working prototypes.</p>
+        </div>
+      </div>
+      <div class="stat-grid reveal">
+        <div class="stat-box"><div class="stat-num">16+</div><div class="stat-label">Years in delivery &amp; program leadership</div></div>
+        <div class="stat-box"><div class="stat-num">6</div><div class="stat-label">Organizations across the journey</div></div>
+        <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Sectors — Banking &amp; Telecom</div></div>
+        <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Countries delivered across</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">02 // Experience</div>
+    <h2 class="section-title reveal">Career timeline</h2>
+    <p class="section-sub reveal">Six organizations, one continuous trajectory — from telecom operations into enterprise program and portfolio leadership.</p>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Current</span><span>2022 — Present</span></div>
+        <div class="tl-role">Senior Program Management Consultant</div>
+        <div class="tl-org">Capco Technology Pvt. Ltd. · Bengaluru, India</div>
+        <ul class="tl-list">
+          <li>Leading strategic banking transformation programs across global portfolios, including HSBC WPB Asset Management Client Business initiatives supporting enterprise-wide digital transformation.</li>
+          <li>Creating project charters, business cases, delivery roadmaps and governance models enabling structured program execution.</li>
+          <li>Managing hybrid Project Management and PMO functions while directing cross-functional business, development, testing and support teams — collaborating with C-level executives to align delivery priorities.</li>
+          <li>Identifying overdue milestones, removing execution bottlenecks and restoring delivery commitments across multiple workstreams.</li>
+          <li>Developing Power BI reporting frameworks that give leadership actionable portfolio insights and business visibility.</li>
+          <li>Serving as organizational SME for JIRA, Confluence, Clarity, SharePoint, Tableau and Power BI — and designing AI-enabled and RPA solutions that reduce manual effort through intelligent workflow automation.</li>
+          <li>Delivering executive presentations, strategic scorecards, portfolio updates and monthly governance reviews for senior leadership.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">JIRA</span><span class="tag">Confluence</span><span class="tag">Clarity</span>
+          <span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">SharePoint</span>
+          <span class="tag">Agile</span><span class="tag">RPA</span>
+        </div>
+      </div>
+
+      <div class="tl-item past reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Banking</span><span>2021 — 2022</span></div>
+        <div class="tl-role">Senior Consultant</div>
+        <div class="tl-org">Ujjivan Small Finance Bank · Bengaluru, India</div>
+        <ul class="tl-list">
+          <li>Delivered liabilities and treasury initiatives from planning through production implementation across business functions.</li>
+          <li>Launched Digital Account Opening and Video KYC solutions achieving <strong>zero audit errors</strong> during go-live.</li>
+          <li>Managed multi-million-dollar programs covering planning, vendor governance, deployment and post-production stabilization.</li>
+          <li>Established RBI-compliant controls while managing CAB approvals and production release governance activities.</li>
+          <li>Built Power BI and Clarity dashboards enabling faster portfolio reviews and leadership decision-making.</li>
+          <li>Introduced Scrum governance improving planning discipline, delivery transparency and cross-functional collaboration.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">Digital Banking</span><span class="tag">Video KYC</span><span class="tag">RBI Compliance</span>
+          <span class="tag">Power BI</span><span class="tag">Clarity</span><span class="tag">Scrum</span>
+        </div>
+      </div>
+
+      <div class="tl-item past reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Consulting</span><span>2019 — 2021</span></div>
+        <div class="tl-role">Senior Consultant</div>
+        <div class="tl-org">Capco · Bengaluru, India</div>
+        <ul class="tl-list">
+          <li>Directed complete project lifecycles from requirements through deployment and post-production support.</li>
+          <li>Developed business cases, strategic plans, Steering Committee presentations and executive decision-support documentation.</li>
+          <li>Managed budgets, resource allocation, delivery schedules and financial commitments ensuring controlled project execution.</li>
+          <li>Standardized execution practices through governance reviews, milestone tracking and continuous operational improvements.</li>
+          <li>Mentored junior Project Managers while eliminating repetitive manual activities to accelerate execution efficiency.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">Program Delivery</span><span class="tag">Financial Governance</span>
+          <span class="tag">Steering Committee</span><span class="tag">Mentoring</span><span class="tag">Process Automation</span>
+        </div>
+      </div>
+
+      <div class="tl-item past reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Automation</span><span>2017 — 2019</span></div>
+        <div class="tl-role">Assistant Manager</div>
+        <div class="tl-org">Gradmener Technology Pvt. Ltd. · Bengaluru, India</div>
+        <ul class="tl-list">
+          <li>Implemented Robotic Process Automation (RPA) solutions streamlining business operations and improving execution efficiency.</li>
+          <li>Redesigned manual workflows into structured automated processes strengthening operational consistency.</li>
+          <li>Developed automated pipeline and project reports improving operational visibility for business and leadership teams.</li>
+          <li>Established operational frameworks supporting sustainable transformation initiatives and continuous improvement.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">RPA</span><span class="tag">Process Transformation</span>
+          <span class="tag">Automated Reporting</span><span class="tag">Digital Enablement</span>
+        </div>
+      </div>
+
+      <div class="tl-item past reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Global PMO</span><span>2013 — 2016</span></div>
+        <div class="tl-role">Senior Delivery Consultant</div>
+        <div class="tl-org">Capgemini India Pvt. Ltd. · India</div>
+        <ul class="tl-list">
+          <li>Led PMO operations across India, UK, Netherlands and UAE supporting enterprise client programs.</li>
+          <li>Delivered the Grolsch SAP implementation on a multi-million-euro budget with successful production deployment.</li>
+          <li>Achieved zero-error audits through standardized project controls, governance practices and delivery discipline.</li>
+          <li>Implemented SharePoint environments and executive dashboards strengthening enterprise collaboration and reporting.</li>
+          <li>Directed geographically distributed teams while managing milestones, dependencies and implementation activities.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">Global PMO</span><span class="tag">SAP</span><span class="tag">SharePoint</span>
+          <span class="tag">Zero-Error Audits</span><span class="tag">Distributed Teams</span>
+        </div>
+      </div>
+
+      <div class="tl-item past reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-meta"><span class="tl-badge">Foundational</span><span>2009 — 2013</span></div>
+        <div class="tl-role">Team Lead</div>
+        <div class="tl-org">NTT DATA · India</div>
+        <ul class="tl-list">
+          <li>Managed tariff operations and digital front-end initiatives supporting T-Mobile and Orange.</li>
+          <li>Developed automated reporting solutions improving operational monitoring and informed management decision-making.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">Telecom</span><span class="tag">Tariff Operations</span>
+          <span class="tag">T-Mobile</span><span class="tag">Orange</span><span class="tag">Automated Reporting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">03 // Skills</div>
+    <h2 class="section-title reveal">Technical toolkit</h2>
+    <p class="section-sub reveal">A toolkit shaped by enterprise tooling, financial governance and automation — plus the leadership discipline delivery demands.</p>
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <h3>Project Management Platforms</h3>
+        <div class="skill-tags"><span>JIRA</span><span>Confluence</span><span>Clarity</span><span>MS Project</span><span>MS Visio</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Business Intelligence</h3>
+        <div class="skill-tags"><span>Power BI</span><span>Tableau</span><span>Executive Dashboards</span><span>Portfolio Reporting</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Collaboration &amp; Enterprise</h3>
+        <div class="skill-tags"><span>SharePoint</span><span>Microsoft Office 365</span><span>SAP</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Automation &amp; AI Solutions</h3>
+        <div class="skill-tags"><span>RPA</span><span>GPT Workflow Automation</span><span>Prompt Engineering</span><span>AI-Driven Workflows</span><span>Data Office Automation</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Methodologies &amp; Governance</h3>
+        <div class="skill-tags"><span>Agile</span><span>Scrum</span><span>PMO Frameworks</span><span>Financial Governance</span><span>Regulatory Compliance</span><span>Change Management</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Core Competencies</h3>
+        <div class="skill-tags"><span>Program Management</span><span>Portfolio Management</span><span>Delivery Management</span><span>Resource Planning</span><span>Cross-Functional Leadership</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Leadership</h3>
+        <div class="skill-tags"><span>Executive Communication</span><span>Strategic Thinking</span><span>Team Leadership</span><span>Decision Making</span><span>Mentoring</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Analytical &amp; People Skills</h3>
+        <div class="skill-tags"><span>Analytical Thinking</span><span>Problem Solving</span><span>Relationship Building</span><span>Executive Reporting</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Certification</h3>
+        <div class="skill-tags"><span>Certified Scrum Master (CSM)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI DEVELOPMENT & USAGE -->
+<section id="ai">
+  <div class="wrap">
+    <div class="eyebrow">04 // AI Development &amp; Usage</div>
+    <h2 class="section-title reveal">AI products designed, built &amp; shipped</h2>
+    <p class="section-sub reveal">Not just using AI — building with it. Five AI-enabled products spanning portfolio intelligence, voice assistance, solution architecture, enterprise AI collaboration and resource recruitment workflows.</p>
+    <div class="app-grid">
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 01</span><span class="proj-plat">PPM Platform</span></div>
+        <h3>PM Control Tower</h3>
+        <div class="app-tagline">Enterprise Project, Program &amp; Portfolio Management — "The Command Center"</div>
+        <ul class="app-feats">
+          <li>Executive Control Tower with RAG + GREY honesty, exception-first feed and traceable insights — leadership never needs to ask for status.</li>
+          <li>Portfolio → Program → Project → WBS hierarchy with CPM schedule engine (critical path, float), milestones and versioned baselines.</li>
+          <li>EVM engine (CPI / SPI / EAC / ETC / VAC), budget lines, RAID, change requests and a governance rules engine with auto-alerts.</li>
+          <li>One-click Leadership Pack, 17 sub-reports, What-Changed analysis and AI-drafted steering packs (human-gated).</li>
+          <li>Agile sprints, Kanban / Calendar / Workload boards, Monte Carlo P80 forecasting and tamper-evident evidence bundles.</li>
+          <li>Investment governance — business cases with ROI / NPV / IRR / payback and CFO approval workflow.</li>
+          <li>115 data models · 167 API routes · 15 computation engines with a realtime gateway.</li>
+        </ul>
+        <a class="app-live" href="https://pmct.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — pmct.vercel.app</a>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 02</span><span class="proj-plat">Voice AI</span></div>
+        <h3>Jigglypuff</h3>
+        <div class="app-tagline">Unified voice AI assistant — converse, research, meet, act</div>
+        <ul class="app-feats">
+          <li>Natural voice conversation with barge-in interruption and empathic, tone-adaptive responses in 80+ languages.</li>
+          <li>Deep research mode — multi-source synthesis delivered as citation cards from live open data.</li>
+          <li>Meeting intelligence — live timestamped transcription compiled into duration, topic and word summaries.</li>
+          <li>HITL-gated tools — high-risk actions pause for explicit voice or click approval before executing.</li>
+          <li>Dashboard modules — automated daily worklog, requests ticketing, lead capture, scheduling, email drafting and a Voice Lab studio.</li>
+          <li>Continuous-learning vocabulary, universal dictation and a one-line embeddable widget — 100% local-first privacy.</li>
+          <li>Optional routing to any OpenAI-compatible engine with keyless open-data fallback.</li>
+        </ul>
+        <a class="app-live" href="https://jigglypuff-ai.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — jigglypuff-ai.vercel.app</a>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 03</span><span class="proj-plat">Agentic AI</span></div>
+        <h3>The Fix</h3>
+        <div class="app-tagline">Enterprise solution discovery &amp; dual-track architecture engine</div>
+        <ul class="app-feats">
+          <li>Ingests vague requirements and outputs global market analysis plus dual-track architectures — Agile/Lean vs Enterprise Scale — each with costed KPIs and a Probability-of-Success score.</li>
+          <li>Multi-agent LangGraph pipeline (5 agents) with live agent streaming and a What-If re-scoring studio.</li>
+          <li>Rendered Mermaid.js architecture diagrams and exact PoC blueprints ready for execution.</li>
+          <li>Six modules — Command Deck, Solution Discovery, Blueprint Vault, Requirements Intake, Test Orchestration, PMO Analytics.</li>
+          <li>One-click corporate exports — PPT, DOC, CSV, PDF — with a server-side Team Vault, auto-versioning and audit trail.</li>
+          <li>Ships as web SPA, Windows desktop (Tauri 2.0) and mobile (Capacitor / PWA) from one codebase.</li>
+        </ul>
+        <a class="app-live" href="https://the-fix-optinus.vercel.app" target="_blank" rel="noopener"><span class="dot"></span>Live — the-fix-optinus.vercel.app</a>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 04</span><span class="proj-plat">AI Coworker</span></div>
+        <h3>Bumblebee</h3>
+        <div class="app-tagline">Enterprise AI coworker — research, remember, automate, deliver</div>
+        <ul class="app-feats">
+          <li>Persistent AI chat with live web grounding and cited sources.</li>
+          <li>Long-term memory and configurable role-specific bots.</li>
+          <li>Agent orchestration with visible plan, execute, verify and synthesize steps.</li>
+          <li>Scheduled routines, document knowledge search and real downloadable file generation.</li>
+          <li>Connector framework, multi-provider model gateway, approval gates, workspace isolation and audit trails.</li>
+          <li>Usage analytics, notifications and administration controls for team and enterprise workflows.</li>
+        </ul>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="app-top"><span class="app-num">APP // 05</span><span class="proj-plat">AI + Resource Tech</span></div>
+        <h3>Optinus Resource Management Tool</h3>
+        <div class="app-tagline">AI-powered resource demand, candidate pipeline and ATS intelligence</div>
+        <ul class="app-feats">
+          <li>Full-stack platform built with Next.js 16, TypeScript and Prisma ORM, organized across 12 integrated modules.</li>
+          <li>AI-powered resume extraction from PDF/DOC/DOCX and batch ATS scoring against job descriptions.</li>
+          <li>Demand-to-onboarding pipeline with drag-and-drop Kanban, interview scheduling and immutable status history.</li>
+          <li>Role-based access across six user roles, audit logs and centralized candidate/resource records.</li>
+          <li>Bulk CSV/TSV/JSON import with smart delimiter detection, executive KPI dashboards, conversion funnels and aging analytics.</li>
+          <li>Global location support, INR/USD/EUR cost tracking and Docker-based offline deployment.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / HIGHLIGHTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">05 // Highlights</div>
+    <h2 class="section-title reveal">Signature programs &amp; wins</h2>
+    <p class="section-sub reveal">Enterprise-scale programs across banking, ERP, automation and telecom — each delivered with governance, discipline and measurable outcomes.</p>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-top"><span class="proj-cat">Banking Transformation</span><span class="proj-plat">Portfolio</span></div>
+        <h3>HSBC WPB Asset Management</h3>
+        <p>Leading Client Business initiatives supporting enterprise-wide digital transformation — building project charters, business cases, delivery roadmaps and governance models, with Power BI portfolio intelligence giving leadership actionable visibility.</p>
+        <div class="proj-stack"><span>Program Governance</span><span>Power BI</span><span>Clarity</span><span>Executive Reporting</span></div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-top"><span class="proj-cat">Digital Banking</span><span class="proj-plat">Go-Live</span></div>
+        <h3>Digital Account Opening &amp; Video KYC</h3>
+        <p>Launched at Ujjivan Small Finance Bank with <strong>zero audit errors</strong> at go-live — backed by RBI-compliant controls, CAB approvals, vendor governance and post-production stabilization across a multi-million-dollar program.</p>
+        <div class="proj-stack"><span>Video KYC</span><span>RBI Compliance</span><span>CAB Governance</span><span>Stabilization</span></div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-top"><span class="proj-cat">ERP Transformation</span><span class="proj-plat">Multi-Million €</span></div>
+        <h3>Grolsch SAP Implementation</h3>
+        <p>Delivered the Grolsch SAP implementation at Capgemini on a multi-million-euro budget with successful production deployment — supported by global PMO operations across India, UK, Netherlands and UAE and zero-error audit discipline.</p>
+        <div class="proj-stack"><span>SAP</span><span>Global PMO</span><span>Quality Assurance</span><span>Production Deployment</span></div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-top"><span class="proj-cat">Automation</span><span class="proj-plat">AI + RPA</span></div>
+        <h3>AI-Enabled Workflow Automation</h3>
+        <p>Designed AI-enabled and RPA solutions reducing manual effort — accelerating project documentation, RAID analysis and operational execution through intelligent workflow automation, plus automated reporting pipelines for leadership visibility.</p>
+        <div class="proj-stack"><span>RPA</span><span>GPT Workflows</span><span>Prompt Engineering</span><span>Automated Reporting</span></div>
+      </div>
+
+      <div class="proj-card reveal" style="grid-column:1/-1;">
+        <div class="proj-top"><span class="proj-cat">Telecom Operations</span><span class="proj-plat">2009 — 2013</span></div>
+        <h3>Tariff Operations for T-Mobile &amp; Orange</h3>
+        <p>Managed tariff operations and digital front-end initiatives at NTT DATA supporting T-Mobile and Orange — developing automated reporting solutions that improved operational monitoring and informed management decision-making. The foundational chapter of a career built on reliable, structured delivery.</p>
+        <div class="proj-stack"><span>Telecom</span><span>Tariff Operations</span><span>Digital Front-End</span><span>Automated Reporting</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow">06 // Education</div>
+    <h2 class="section-title reveal">Education &amp; certifications</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="yr">2008 · Score: 7.5/10</div>
+        <h3>Master of Business Administration (MBA/PGDM) — Finance</h3>
+        <p>Wigan and Leigh College (WLC)</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="yr">2006 · Score: 63%</div>
+        <h3>Bachelor of Commerce (B.Com)</h3>
+        <p>Bharathidasan University, Trichy</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="yr">Professional Certification</div>
+        <h3>Certified Scrum Master (CSM)</h3>
+        <p>Scrum Alliance</p>
+      </div>
+    </div>
+    <div class="chip-row reveal">
+      <div class="chip"><b>Zero-Audit Go-Lives</b></div>
+      <div class="chip"><b>Multi-Million-Dollar Portfolios</b></div>
+      <div class="chip"><b>C-Level Partnership</b></div>
+      <div class="chip"><b>Global Delivery — IN · UK · NL · UAE</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">07 // Contact</div>
+    <h2 class="contact-title reveal">Let's deliver something<br>exceptional together.</h2>
+    <p class="section-sub reveal">Open to senior leadership roles in Program Management, Delivery Management, PMO, Portfolio Management, or Enterprise Transformation.</p>
+    <div class="contact-actions reveal">
+      <a class="btn btn-primary" href="mailto:vinodh.poomari@gmail.com">Email Me</a>
+      <a class="btn btn-ghost" href="https://in.linkedin.com/in/vinodh-kumar-poomari-6b078543/" target="_blank" rel="noopener">LinkedIn Profile</a>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:vinodh.poomari@gmail.com">vinodh.poomari@gmail.com</a>
+      <a href="tel:+917483592435">+91 74835 92435</a>
+      <span>Bengaluru, Karnataka, India</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vinodh Kumar Poomari</span>
+    <span>Designed &amp; built as a status dashboard, in tribute to a career of structured execution.</span>
+  </div>
+</footer>
+
+<script>
+// typing effect
+const phrases = ["whoami","cat portfolio.log","status --governance"];
+const typedEl = document.getElementById('typed');
+let pi=0, ci=0, deleting=false;
+function type(){
+  const current = phrases[pi];
+  if(!deleting){
+    ci++;
+    typedEl.textContent = current.slice(0,ci);
+    if(ci===current.length){ deleting=true; setTimeout(type, 1400); return; }
+  } else {
+    ci--;
+    typedEl.textContent = current.slice(0,ci);
+    if(ci===0){ deleting=false; pi=(pi+1)%phrases.length; }
+  }
+  setTimeout(type, deleting ? 40 : 80);
+}
+type();
+
+// reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+},{threshold:0.15});
+revealEls.forEach(el=>io.observe(el));
+
+// animate bars once hero is visible
+window.addEventListener('load', ()=>{
+  setTimeout(()=>{
+    document.querySelectorAll('.bar-fill').forEach(b=>{
+      b.style.width = b.dataset.width;
+    });
+  }, 400);
+});
+</script>
+</body>
+</html>
